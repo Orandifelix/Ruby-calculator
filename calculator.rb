@@ -68,13 +68,17 @@ end
 #choose operator
 
 if operator == "+"
-  puts num1 + num2
+  answer = num1 + num2
 elsif operator == "-"
-  puts num1 - num2
+  answer = num1 - num2
 elsif operator == "/"
-  puts num1 / num2
+  answer = num1 / num2
 elsif operator == "*"
-  puts num1 * num2
+  answer = num1 * num2
 else
   puts "Invalid operator"
 end
+
+formatted_answer = sprintf('%.4f', answer)
+
+puts  "Answer for #{num1} #{operator} #{num2} is : #{formatted_answer}"  
